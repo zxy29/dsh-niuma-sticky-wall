@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Task records">
+  <title>Task records</title>
+  <g transform="rotate(-4 32 32)">
+    <path d="M14 10h36a4 4 0 0 1 4 4v28L40 52H14a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z" fill="#FFC94D"/>
+    <path d="M54 42 40 52V46a4 4 0 0 1 4-4z" fill="#E5A000"/>
+    <g stroke="#7A4E00" stroke-width="3.2" stroke-linecap="round" opacity="0.85">
+      <path d="M20 23h24"/>
+      <path d="M20 32h18"/>
+      <path d="M20 41h11"/>
+    </g>
+  </g>
+  <circle cx="47" cy="16" r="6" fill="#2F6FEB"/>
+</svg>

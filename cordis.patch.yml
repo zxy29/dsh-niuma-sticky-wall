@@ -1,0 +1,14 @@
+# Sticky Wall bundle patch.
+#
+# One row, one package, two faces:
+#   - the Host half (`exports["."]`, index.js) owns the durable record list at
+#     $DSH_HOME/sticky-notes.json, the /api/sticky-notes/notes route family and
+#     the `task_records` agent tool;
+#   - the browser half (`exports["./client"]`, client.js) renders the sidebar
+#     entry and the sticky wall page, reaching the Host half over the same
+#     origin.
+#
+# The row is a bare plugin by package name; nothing shipped is replaced.
+- insert:
+    - id: sticky-notes
+      name: '@local/dsh-sticky-notes'
