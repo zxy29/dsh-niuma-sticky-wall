@@ -1,11 +1,27 @@
 {
-  "name": "@local/dsh-sticky-notes",
+  "name": "dsh-niuma-sticky-wall",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
-  "description": "Sticky Wall in the DSH sidebar: colored note cards with a paper color and a calendar day each, grouped by day, plus an agent tool over the same list.",
+  "description": "牛马便签墙 / Sticky Wall for DeepSeek Harness: a sidebar wall of colored notes, one paper color and one calendar day per note, grouped by day, searchable, plus a task_records agent tool over the same list.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sticky-notes",
+    "notes",
+    "wall",
+    "sidebar"
+  ],
   "license": "MIT",
   "icon": "./icon.svg",
+  "homepage": "https://github.com/zxy29/dsh-niuma-sticky-wall#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxy29/dsh-niuma-sticky-wall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zxy29/dsh-niuma-sticky-wall/issues"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -18,8 +34,17 @@
     "client.js",
     "cordis.patch.yml",
     "locale/*.json",
-    "icon.svg"
+    "icon.svg",
+    "README.md",
+    "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "prepublishOnly": "npm run check"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

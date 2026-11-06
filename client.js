@@ -25,7 +25,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: '@local/dsh-sticky-notes',
+  id: 'dsh-niuma-sticky-wall',
   factory(require) {
     const React = require('react')
     const h = React.createElement

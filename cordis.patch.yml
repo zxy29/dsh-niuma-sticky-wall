@@ -11,4 +11,4 @@
 # The row is a bare plugin by package name; nothing shipped is replaced.
 - insert:
     - id: sticky-notes
-      name: '@local/dsh-sticky-notes'
+      name: 'dsh-niuma-sticky-wall'
